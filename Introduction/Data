@@ -1,0 +1,17 @@
+ Data
+
+Description
+The data set used in the present study is provided through the IBM Applied Data Science Capstone
+Course [4]. The raw data set contains car accident information in Seattle from 2004 to 2020. The raw
+data set contains 194,673 entries of accidents with 38 descriptive features (columns).
+
+Preliminary Data Preprocessing
+The data set has some duplicate entries. We first drop the duplicated rows. This reduced the data set to
+189,542 rows.
+Some of the entries also contain Nan values. For example, two of the features that we consider as
+independent variables, road condition and weather condition, contain 5012 and 5081 Nan values,
+respectively. We will remove the Nan values for the exploratory data analysis and predictive modeling.
+In the exploratory data analysis session, we will mostly be focused on analyzing subsets of selected
+features of the data. Thus, in this phase, we will drop Nan values in each of the subsets selected for the
+analysis. In the later predictive modeling phase where we apply a machine learning approach, we will
+drop all Nan values in the dataset that is used by the machine learning algorithm. Additional data preprocessing will be applied. 
