@@ -1,1 +1,1 @@
-# covid19-analasys
+# capstone project
