@@ -15,3 +15,11 @@ In the exploratory data analysis session, we will mostly be focused on analyzing
 features of the data. Thus, in this phase, we will drop Nan values in each of the subsets selected for the
 analysis. In the later predictive modeling phase where we apply a machine learning approach, we will
 drop all Nan values in the dataset that is used by the machine learning algorithm. Additional data preprocessing will be applied. 
+Some of the columns in the data set contain redundant information or information that is not very
+relevant for the purpose of the present analysis, such as, “INCKEY”, “COLDETKEY”, and “SEVERITYDESC,”
+etc., and therefore, are dropped. Some other data columns are not very clear. For example, the
+“SPEEDING” feature contains only “Y” and “nan” values, and it’s not clear how many of the “nan” entries
+are actually speeding violations. Therefore, such columns are also dropped. In addition, the date and
+time information are converted into three additional feature parameters: “year”, “dayofweek”, and
+“hour”. A full description of the feature parameters used in the present study are listed in Table 1. All
+other features of the original data set [4] that are not listed in Table 1 are dropped. 
